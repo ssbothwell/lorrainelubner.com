@@ -1,0 +1,18 @@
+<% title "Vitae" %>
+
+<p>
+  <strong>Entry:</strong>
+  <%=h @vitae.entry %>
+</p>
+<p>
+  <strong>CV Category:</strong>
+  <%=h @vitae.cvcat.category %>
+</p>
+
+<p>
+  <% if current_user %>
+    <%= link_to "Edit", edit_vitae_path(@vitae) %> |
+    <%= link_to "Destroy", @vitae, :confirm => 'Are you sure?', :method => :delete %> |
+  <% end %>
+  <%= link_to "Go Back", cvcats_path %>
+</p>

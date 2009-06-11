@@ -1,0 +1,13 @@
+<% title "Cvcat" %>
+<p>
+  <strong>Category:</strong>
+  <%=h @cvcat.category %>
+</p>
+<% @cvcat.vitaes.each do |vitae| %> 
+<p><%= vitae.entry %></p>
+<% end %>
+<p>
+  <%= link_to "Edit", edit_cvcat_path(@cvcat) %> |
+  <%= link_to "Destroy", @cvcat, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", cvcats_path %>
+</p>

@@ -1,0 +1,15 @@
+<% title "Paintings" %>
+<% if current_user %>
+  <%= link_to "New Painting", new_painting_path, :class => "crud" %>
+<% end %>
+<% for painting in @paintings %>
+<div class="picture">
+  <%= link_to image_tag(painting.photo.url(:small)), painting %><br />
+  <%=h painting.title %><br />
+  <%=h painting.description %><br />
+  <% if current_user %>
+    <%= link_to "Edit", edit_painting_path(painting), :class => "crud" %>
+    <%= link_to "Destroy", painting, :class => "crud", :confirm => 'Are you sure?', :method => :delete %>
+  <% end %>
+</div>
+<% end %>

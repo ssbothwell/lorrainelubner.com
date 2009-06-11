@@ -1,0 +1,2 @@
+module VitaesHelper
+end

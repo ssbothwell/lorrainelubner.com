@@ -1,0 +1,8 @@
+<% form_for @cvcat do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
