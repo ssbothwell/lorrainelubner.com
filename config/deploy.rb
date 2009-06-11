@@ -1,15 +1,34 @@
-set :application, "lorrainelubner.com"
-set :repository,  "set your repository location here"
+# Application
+set :application, "lorrainelubner"
+set :deploy_to, "/home/banditbill/lorrainelubner"
 
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
+# Settings
+set :use_sudo, false
 
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
+# Server
+
+role :app, "lorrainelubner.com"
+role :web, "lorrainelubner.com"
+role :db,  "lorrainelubner.com", :primary => true
+set :user, "banditbill"
+set :use_sudo, false
+
+# Git
+
 set :scm, :git
+set :repository, "git@github.com:ssbothwell/lorrainelubner.com.git"
+set :scm_username, "ssbothwell"
+set :scm_passphrase, "haskard"
+ssh_options[:paranoid] = false
+default_run_options[:pty] = true
 
-role :app, "your app-server here"
-role :web, "your web-server here"
-role :db,  "your db-server here", :primary => true
+# Passenger
+
+namespace :passenger do
+  desc "Restart Application"
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
+
+after :deploy, "passenger:restart"
