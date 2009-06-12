@@ -1,5 +1,5 @@
 class VitaesController < ApplicationController
-  before_filter :require_user, :except => [:index, :show] 
+  before_filter :require_admin, :except => [:index, :show] 
 
   def index
     @vitaes = Vitae.all

@@ -1,4 +1,6 @@
 class PaintingsController < ApplicationController
+  before_filter :require_admin, :except => [:index, :show] 
+
   def index
     @paintings = Painting.all
   end
