@@ -1,5 +1,7 @@
 <% title "New Cvcat" %>
 
- <%= render :partial => 'form' %>
+<% form_for @cvcat do |f| %>
+  <%= render :partial => 'form', :object => f -%>
+<% end %>
 
 <p><%= link_to "Back to List", cvcats_path %></p>

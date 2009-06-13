@@ -1,6 +1,8 @@
 <% title "Edit Cvcat" %>
 
-<%= render :partial => 'form' %>
+<% form_for @cvcat do |f| %>
+  <%= render :partial => 'form', :object => f -%>
+<% end %>
 
 <p>
   <%= link_to "Show", @cvcat %> |
