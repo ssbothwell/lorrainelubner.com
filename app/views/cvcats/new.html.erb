@@ -1,5 +1,20 @@
 <% title "New Cvcat" %>
 
-<%= render :partial => 'form' %>
+<% form_for @cvcat do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </p>
+
+  <% f.fields_for :cventries do |entry_form| %>
+    <p>
+    <%= entry_form.label :entry %>
+    <%= entry_form.text_field :entry %>
+    </p>
+  <% end %>
+  
+  <p><%= f.submit "Submit" %></p>
+<% end %>
 
 <p><%= link_to "Back to List", cvcats_path %></p>

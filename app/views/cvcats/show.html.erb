@@ -3,8 +3,8 @@
   <strong>Category:</strong>
   <%=h @cvcat.category %>
 </p>
-<% @cvcat.vitaes.each do |vitae| %> 
-<p><%= vitae.entry %></p>
+<% @cvcat.cventries.each do |cventry| %> 
+<p><%= cventry.entry %></p>
 <% end %>
 <p>
   <%= link_to "Edit", edit_cvcat_path(@cvcat) %> |

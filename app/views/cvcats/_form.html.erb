@@ -4,5 +4,14 @@
     <%= f.label :category %><br />
     <%= f.text_field :category %>
   </p>
+  <% f.fields_for :cvcats do |entry_form| %>
+  <div class="entry">
+    <p>
+    <%= entry_form.label :entry %>
+    <%= entry_form.text_field :entry %>
+    </p>
+  </div>
+  <% end %>
+  
   <p><%= f.submit "Submit" %></p>
 <% end %>

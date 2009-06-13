@@ -10,6 +10,8 @@ class CvcatsController < ApplicationController
   
   def new
     @cvcat = Cvcat.new
+    @cvcat.cventries.build
+    
   end
   
   def create
