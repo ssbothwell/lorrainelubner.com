@@ -7,12 +7,6 @@
     <%= f.text_field :category %>
   </p>
 
-  <% f.fields_for :cventries do |entry_form| %>
-    <p>
-    <%= entry_form.label :entry %>
-    <%= entry_form.text_field :entry %>
-    </p>
-  <% end %>
   
   <p><%= f.submit "Submit" %></p>
 <% end %>
