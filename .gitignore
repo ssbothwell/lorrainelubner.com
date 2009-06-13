@@ -2,3 +2,5 @@ log/*.log
 tmp/**/*
 doc/api
 doc/app
+public/assets/*
+db/development.sqlite3
