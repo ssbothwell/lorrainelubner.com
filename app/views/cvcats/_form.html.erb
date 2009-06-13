@@ -1,15 +1,13 @@
   <%= form.error_messages %>
   <p>
-    <%= form.label :category %><br />
-    <%= form.text_field :category %>
+    Category: <%= form.text_field :category %>
   </p>
   
   <div id="entries">
     <% form.fields_for :cventries do |entry_form| %>
-    <div class="entry">
-    <%= render :partial => 'entry', :locals => { :form => entry_form } %>
-    </div>
+    <%= render :partial => 'entry', :locals => { :entry_form => entry_form } %>
     <% end %>
   </div>
+  <br />
   <p><%= add_task_link(form) %></p>
   <p><%= form.submit "Submit" %></p>
