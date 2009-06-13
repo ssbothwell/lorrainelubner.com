@@ -4078,4 +4078,417 @@ Rendering template within /Users/solomon/programming/lorrainelubner/app/views/la
 Completed in 40ms (View: 21, DB: 0) | 200 OK [http://localhost/cvcats/new]
 ^CExiting
 solomon@yellowshark lorrainelubner % git commit -a[K[K[K[K[K[K[K[K[Kadd .
-solomon@yellowshark lorrainelubner % git commit 0a [K[K[K-a -m "mu[K[KCV form working [K e
+solomon@yellowshark lorrainelubner % git commit 0a [K[K[K-a -m "mu[K[KCV form working [K except ed it."
+Created commit 8dcda2c: CV form working except edit.
+ 7 files changed, 3543 insertions(+), 25 deletions(-)
+ rename app/views/cvcats/{_entries.html.erb => _entry.html.erb} (68%)
+ rewrite app/views/cvcats/_form.html.erb (82%)
+solomon@yellowshark lorrainelubner % git push originmast[K[K[K[K master
+Counting objects: 26, done.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  42% (6/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 18.03 KiB, done.
+Total 14 (delta 4), reused 0 (delta 0)
+To git@github.com:ssbothwell/lorrainelubner.com.git
+   472e4b8..8dcda2c  master -> master
+solomon@yellowshark lorrainelubner % cd public/
+solomon@yellowshark public % ls
+404.html	500.html	favicon.ico	javascripts	stylesheets
+422.html	assets		images		robots.txt
+solomon@yellowshark public % cd images/
+solomon@yellowshark images % ls
+frontimage.jpg	rails.png
+solomon@yellowshark images % cd ..
+solomon@yellowshark public % cd assets/
+solomon@yellowshark assets % ls
+products
+solomon@yellowshark assets % cd products/
+solomon@yellowshark products % ls
+10	6	7	8	9
+solomon@yellowshark products % cd .[K[K[K[Kcd 10
+solomon@yellowshark 10 % ls
+medium		original	small
+solomon@yellowshark 10 % cd ..
+solomon@yellowshark products % cd ..
+solomon@yellowshark assets % ls
+products
+solomon@yellowshark assets % cd ..
+solomon@yellowshark public % git rm assets/
+fatal: not removing 'public/assets/' recursively without -r
+solomon@yellowshark public % git rm assets/-assets/rassets/ assets/
+rm 'public/assets/products/10/medium/DSC_0393.jpg'
+rm 'public/assets/products/10/original/DSC_0393.jpg'
+rm 'public/assets/products/10/small/DSC_0393.jpg'
+rm 'public/assets/products/6/medium/DSC_0388.jpg'
+rm 'public/assets/products/6/original/DSC_0388.jpg'
+rm 'public/assets/products/6/small/DSC_0388.jpg'
+rm 'public/assets/products/7/medium/DSC_0390.jpg'
+rm 'public/assets/products/7/original/DSC_0390.jpg'
+rm 'public/assets/products/7/small/DSC_0390.jpg'
+rm 'public/assets/products/8/medium/DSC_0391.jpg'
+rm 'public/assets/products/8/original/DSC_0391.jpg'
+rm 'public/assets/products/8/small/DSC_0391.jpg'
+rm 'public/assets/products/9/original/DSC_0392.jpg'
+rm 'public/assets/products/9/small/DSC_0392.jpg'
+solomon@yellowshark public % ls
+404.html	500.html	images		robots.txt
+422.html	favicon.ico	javascripts	stylesheets
+solomon@yellowshark public % 
+solomon@yellowshark public % git [K[K[K[Kman git
+7[?47h[?1h=[24;1H[KGIT(1)                            Git Manual                            GIT(1)
+
+[1mNAME[m
+       git - the stupid content tracker
+
+[1mSYNOPSIS[m
+           [4mgit[m [--version] [--exec-path[=GIT_EXEC_PATH]]
+               [-p|--paginate|--no-pager]
+               [--bare] [--git-dir=GIT_DIR] [--work-tree=GIT_WORK_TREE]
+               [--help] COMMAND [ARGS]
+
+[1mDESCRIPTION[m
+       Git is a fast, scalable, distributed revision control system with an
+       unusually rich command set that provides both high-level operations and
+       full access to internals.
+
+       See [1mgittutorial[m(7) to get started, then see [4mEveryday[m [4mGit[m[1] for a
+       useful minimum set of commands, and "man git-commandname" for
+       documentation of each command. CVS users may also want to read [1mgitcvs-[m
+       [1mmigration[m(7). See the [4mGit[m [4mUser's[m [4mManual[m[2] for a more in-depth
+       introduction.
+
+       The COMMAND is either a name of a Git command (see below) or an alias
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       as defined in the configuration file (see [1mgit-config[m(1)).
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       Formatted and hyperlinked version of the latest git documentation can
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       be viewed at http://www.kernel.org/pub/software/scm/git/docs/.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K[1mOPTIONS[m
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       --version
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           Prints the git suite version that the [4mgit[m program came from.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       --help
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           Prints the synopsis and a list of the most commonly used commands.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           If the option [4m--all[m or [4m-a[m is given then all available commands are
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           printed. If a git command is named this option will bring up the
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           manual page for that command.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           Other options are available to control how the manual page is
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           displayed. See [1mgit-help[m(1) for more information, because git --help
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           ... is converted internally into git help ....
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       --exec-path
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           Path to wherever your core git programs are installed. This can
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           also be controlled by setting the GIT_EXEC_PATH environment
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           variable. If no path is given, [4mgit[m will print the current setting
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           and then exit.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K       -p, --paginate
+[24;1H[K:[24;1H[K [KESCESC[KOO[KBB[24;1H[24;1H[K           Pipe all output into [4mless[m (or if set, $PAGER).
+[24;1H[K:[24;1H[24;1H[K...skipping...
+
+[1mOPTIONS[m
+       --version
+           Prints the git suite version that the [4mgit[m program came from.
+
+       --help
+           Prints the synopsis and a list of the most commonly used commands.
+           If the option [4m--all[m or [4m-a[m is given then all available commands are
+           printed. If a git command is named this option will bring up the
+           manual page for that command.
+
+           Other options are available to control how the manual page is
+           displayed. See [1mgit-help[m(1) for more information, because git --help
+           ... is converted internally into git help ....
+
+       --exec-path
+           Path to wherever your core git programs are installed. This can
+           also be controlled by setting the GIT_EXEC_PATH environment
+           variable. If no path is given, [4mgit[m will print the current setting
+           and then exit.
+
+       -p, --paginate
+           Pipe all output into [4mless[m (or if set, $PAGER).
+[24;1H[K:[24;1H[24;1H[K...skipping...
+
+[1mOPTIONS[m
+       --version
+           Prints the git suite version that the [4mgit[m program came from.
+
+       --help
+           Prints the synopsis and a list of the most commonly used commands.
+           If the option [4m--all[m or [4m-a[m is given then all available commands are
+           printed. If a git command is named this option will bring up the
+           manual page for that command.
+
+           Other options are available to control how the manual page is
+           displayed. See [1mgit-help[m(1) for more information, because git --help
+           ... is converted internally into git help ....
+
+       --exec-path
+           Path to wherever your core git programs are installed. This can
+           also be controlled by setting the GIT_EXEC_PATH environment
+           variable. If no path is given, [4mgit[m will print the current setting
+           and then exit.
+
+       -p, --paginate
+           Pipe all output into [4mless[m (or if set, $PAGER).
+[24;1H[K:[24;1H[K/[Krr[Kmm[24;1H[1;1H
+[2;1H[1mOPTIONS[m
+[3;1H       --version
+[4;1H           Prints the git suite version that the [4mgit[m program came from.
+[5;1H
+[6;1H       --help
+[7;1H           Prints the synopsis and a list of the most commonly used commands.
+[8;1H           If the option [4m--all[m or [4m-a[m is given then all available commands are
+[9;1H           printed. If a git command is named this option will bring up the
+[10;1H           manual page for that command.
+[11;1H
+[12;1H           Other options are available to control how the manual page is
+[13;1H           displayed. See [1mgit-help[m(1) for more information, because git --help
+[14;1H           ... is converted internally into git help ....
+[15;1H
+[16;1H       --exec-path
+[17;1H           Path to wherever your core git programs are installed. This can
+[18;1H           also be controlled by setting the GIT_EXEC_PATH environment
+[19;1H           variable. If no path is given, [4mgit[m will print the current setting
+[20;1H           and then exit.
+[21;1H
+[22;1H       -p, --paginate
+[23;1H           Pipe all output into [4mless[m (or if set, $PAGER).
+[1;1H
+[2;1H[1mOPTIONS[m
+[3;1H       --version
+[4;1H           Prints the git suite version that the [4mgit[m program came from.
+[5;1H
+[6;1H       --help
+[7;1H           Prints the synopsis and a list of the most commonly used commands.
+[8;1H           If the option [4m--all[m or [4m-a[m is given then all available commands are
+[9;1H           printed. If a git command is named this option will bring up the
+[10;1H           manual page for that command.
+[11;1H
+[12;1H           Other options are available to control how the manual page is
+[13;1H           displayed. See [1mgit-help[m(1) for more info[7mrm[mation, because git --help
+[14;1H           ... is converted internally into git help ....
+[15;1H
+[16;1H       --exec-path
+[17;1H           Path to wherever your core git programs are installed. This can
+[18;1H           also be controlled by setting the GIT_EXEC_PATH environment
+[19;1H           variable. If no path is given, [4mgit[m will print the current setting
+[20;1H           and then exit.
+[21;1H
+[22;1H       -p, --paginate
+[23;1H           Pipe all output into [4mless[m (or if set, $PAGER).
+[24;1H[K
+       --no-pager
+           Do not pipe git output into a pager.
+
+       --git-dir=<path>
+           Set the path to the repository. This can also be controlled by
+           setting the GIT_DIR environment variable. It can be an absolute
+           path or relative path to current working directory.
+
+       --work-tree=<path>
+           Set the path to the working tree. The value will not be used in
+           combination with repositories found automatically in a .git
+[24;1H[K:[24;1H[24;1H[K           directory (i.e. $GIT_DIR is not set). This can also be controlled
+[24;1H[K:[24;1H[K/[Krr[Kmm[24;1H[1;1H           ... is converted internally into git help ....
+[2;1H
+[3;1H       --exec-path
+[4;1H           Path to wherever your core git programs are installed. This can
+[5;1H           also be controlled by setting the GIT_EXEC_PATH environment
+[6;1H           variable. If no path is given, [4mgit[m will print the current setting
+[7;1H           and then exit.
+[8;1H
+[9;1H       -p, --paginate
+[10;1H           Pipe all output into [4mless[m (or if set, $PAGER).
+[11;1H
+[12;1H       --no-pager
+[13;1H           Do not pipe git output into a pager.
+[14;1H
+[15;1H       --git-dir=<path>
+[16;1H           Set the path to the repository. This can also be controlled by
+[17;1H           setting the GIT_DIR environment variable. It can be an absolute
+[18;1H           path or relative path to current working directory.
+[19;1H
+[20;1H       --work-tree=<path>
+[21;1H           Set the path to the working tree. The value will not be used in
+[22;1H           combination with repositories found automatically in a .git
+[23;1H           directory (i.e. $GIT_DIR is not set). This can also be controlled
+[1;1H           ... is converted internally into git help ....
+[2;1H
+[3;1H       --exec-path
+[4;1H           Path to wherever your core git programs are installed. This can
+[5;1H           also be controlled by setting the GIT_EXEC_PATH environment
+[6;1H           variable. If no path is given, [4mgit[m will print the current setting
+[7;1H           and then exit.
+[8;1H
+[9;1H       -p, --paginate
+[10;1H           Pipe all output into [4mless[m (or if set, $PAGER).
+[11;1H
+[12;1H       --no-pager
+[13;1H           Do not pipe git output into a pager.
+[14;1H
+[15;1H       --git-dir=<path>
+[16;1H           Set the path to the repository. This can also be controlled by
+[17;1H           setting the GIT_DIR environment variable. It can be an absolute
+[18;1H           path or relative path to current working directory.
+[19;1H
+[20;1H       --work-tree=<path>
+[21;1H           Set the path to the working tree. The value will not be used in
+[22;1H           combination with repositories found automatically in a .git
+[23;1H           directory (i.e. $GIT_DIR is not set). This can also be controlled
+[24;1H[K...skipping...
+       [1mgit-fo[m[1m[7mrm[m[m[1mat-patch[m(1)
+           Prepare patches for e-mail submission.
+
+       [1mgit-gc[m(1)
+           Cleanup unnecessary files and optimize the local repository.
+
+       [1mgit-grep[m(1)
+           Print lines matching a pattern.
+
+       [1mgit-gui[m(1)
+           A portable graphical interface to Git.
+
+       [1mgit-init[m(1)
+           Create an empty git repository or reinitialize an existing one.
+
+       [1mgit-log[m(1)
+           Show commit logs.
+
+       [1mgit-merge[m(1)
+           Join two or more development histories together.
+
+       [1mgit-mv[m(1)
+           Move or rename a file, a directory, or a symlink.
+[24;1H[K:[24;1H[K/[24;1H[24;1H[K...skipping...
+       [1mgit-[m[1m[7mrm[m[m(1)
+           Remove files from the working tree and from the index.
+
+       [1mgit-shortlog[m(1)
+           Summarize [4mgit-log[m output.
+
+       [1mgit-show[m(1)
+           Show various types of objects.
+
+       [1mgit-stash[m(1)
+           Stash the changes in a dirty working directory away.
+
+       [1mgit-status[m(1)
+           Show the working tree status.
+
+       [1mgit-submodule[m(1)
+           Initialize, update or inspect submodules.
+
+       [1mgit-tag[m(1)
+           Create, list, delete or verify a tag object signed with GPG.
+
+       [1mgitk[m(1)
+           The git repository browser.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KAA[24;1H[HM
+[24;1H[K:[24;1H[K [KESCESC[KOO[KAA[24;1H[HM           Revert an existing commit.
+[24;1H[K:[24;1H[K [KESCESC[KOO[KAA[24;1H[HM       [1mgit-revert[m(1)
+[24;1H[K:[24;1H[K [KESCESC[KOO[KAA[24;1H[HM
+[24;1H[K:[24;1H[K [KESCESC[KOO[KAA[24;1H[HM           Reset current HEAD to the specified state.
+[24;1H[K:[24;1H[K [KESCESC[K^?^?[24;1H[K:[24;1H[K [KESCESC[K^J^J[24;1H[K:[24;1H[K [K::[Kqq[24;1H[K[?1l>[2J[?47l8solomon@yellowshark public % 
+solomon@yellowshark public % clear
+[H[2Jsolomon@yellowshark public % mkdir assets
+solomon@yellowshark public % sc[K[Kcd ..
+solomon@yellowshark lorrainelubner % script server[K[K[K[K[K[K[K/server 
+=> Booting Mongrel
+=> Rails 2.3.2 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Processing InfoController#index (for 127.0.0.1 at 2009-06-12 21:50:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"info"}
+Rendering /Users/solomon/programming/lorrainelubner/app/views/info/index.html.erb
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Completed in 37ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PaintingsController#index (for 127.0.0.1 at 2009-06-12 21:50:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"paintings"}
+  [4;35;1mPainting Load (0.5ms)[0m   [0mSELECT * FROM "paintings" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/paintings/index.html.erb
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 66ms (View: 60, DB: 1) | 200 OK [http://localhost/paintings]
+
+
+Processing PaintingsController#new (for 127.0.0.1 at 2009-06-12 21:50:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"paintings"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/paintings/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 59ms (View: 40, DB: 0) | 200 OK [http://localhost/paintings/new]
+
+
+Processing PaintingsController#create (for 127.0.0.1 at 2009-06-12 21:51:09) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "painting"=>{"photo"=>#<File:/var/folders/pb/pbuN5Zn1E9ONyJ7T72pKBk+++TM/-Tmp-/RackMultipart.952.0>, "title"=>"Yellow Ochre Horizontal", "description"=>"60”X60” 2007-09 a/c"}, "controller"=>"paintings"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;35;1mPainting Create (0.7ms)[0m   [0mINSERT INTO "paintings" ("updated_at", "photo_file_name", "photo_file_size", "title", "photo_updated_at", "description", "photo_content_type", "created_at") VALUES('2009-06-13 04:51:11.003941', 'DSC_0388.jpg', 663981, 'Yellow Ochre Horizontal', '2009-06-13 04:51:09.379116', '60”X60” 2007-09 a/c', 'image/jpeg', '2009-06-13 04:51:11.003941')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/solomon/programming/lorrainelubner/public/assets/products/1/small/DSC_0388.jpg
+[paperclip] saving /Users/solomon/programming/lorrainelubner/public/assets/products/1/medium/DSC_0388.jpg
+[paperclip] saving /Users/solomon/programming/lorrainelubner/public/assets/products/1/original/DSC_0388.jpg
+Redirected to http://localhost:3000/paintings
+Completed in 1878ms (DB: 1) | 302 Found [http://localhost/paintings]
+
+
+Processing PaintingsController#index (for 127.0.0.1 at 2009-06-12 21:51:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"paintings"}
+  [4;36;1mPainting Load (0.7ms)[0m   [0;1mSELECT * FROM "paintings" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/paintings/index.html.erb
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 33ms (View: 27, DB: 1) | 200 OK [http://localhost/paintings]
+
+
+Processing PaintingsController#show (for 127.0.0.1 at 2009-06-12 21:51:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"paintings"}
+  [4;36;1mPainting Load (0.3ms)[0m   [0;1mSELECT * FROM "paintings" WHERE ("paintings"."id" = 1) [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/paintings/show.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 32ms (View: 25, DB: 1) | 200 OK [http://localhost/paintings/1]
+cd  ^CExiting
+solomon@yellowshark lorrainelubner % cd public/assets/
+solomon@yellowshark assets % ls
+products
+solomon@yellowshark assets % cd products/
+solomon@yellowshark products % ls
+1
+solomon@yellowshark products % cd 1/
+solomon@yellowshark 1 % ls
+medium		original	small
+solomon@yellowshark 1 % cd original/
+solomon@yellowshark original % ls
+DSC_0388.jpg
+solomon@yellowshark original % cd ..
+solomon@yellowshark 1 % cd ..
+solomon@yellowshark products % cd ..
+solomon@yellowshark assets % cd ..
+solomon@yellowshark public % cd ..
+solomon@yellowshark lorrainelubner % git [K [K[K[K[Kcd db/
+solomon@yellowshark db % ls
+development.sqlite3	migrate			schema.rb
+solomon@yellowshark db % cd [K[K[Kcd [K[K[Kcd. [K[K ..
+solomon@yellowshark lorrainelubner % mate in[K[K.git
+.git/       .gitignore  
+solomon@yellowshark lorrainelubner % mate .git/info/exclude 
+solomon@yellowshark lorrainelubner % cd[K[Kcd [K[K[Kcd public/assets/products/[3Pmate .git/info/exclude [Kcd ..[K[K[K[K[K[Kgit add .
+solomon@yellowshark lorrainelubner % git commit -a -m "removed assets/sqlite3 fi les"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C assets/sqlite3 file[1Ps"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C assets/sqlite3 files[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C assets/sqlite3 files"[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C assets/sqlite3 files" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[4hs[4l[4he[4lt assets/sqlite3 files" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C assets/sqlite3 files""[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C assets/sqlite3 files[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce assets/sqlite3 files"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
