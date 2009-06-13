@@ -1,0 +1,576 @@
+Script started on Fri Jun 12 20:29:59 2009
+solomon@yellowshark lorrainelubner % ls/[Kcd programming/lorrainelubner/ls[K[Kscript/s[Kconsole
+Loading development environment (Rails 2.3.2)
+>> Cv[K[K@cv[K[KCvca[K[K[K[Kcventries = cv[K[KCventri[Ky.find(:all)
+=> []
+>> @cventries
+=> []
+>> exit
+solomon@yellowshark lorrainelubner % script/consolels[Kcd programming/lorrainelubner/top[Kssh solomon@192.168.1.80top[Kcd programming/lorrainelubner/ls[Kscript/console[Kscript/server
+=> Booting Mongrel
+=> Rails 2.3.2 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:30:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.8ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 37ms (View: 23, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:30:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.5ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:31:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 92ms (View: 16, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:31:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;35;1mCvcat Load (0.5ms)[0m   [0mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:33:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;35;1mCvcat Load (0.5ms)[0m   [0mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:33:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+
+
+Processing ApplicationController# (for 127.0.0.1 at 2009-06-12 20:33:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.fields_for) on line #18 of /Users/solomon/programming/lorrainelubner/app/views/cvcats/_form.html.erb:
+15:     </div>
+16:     <% end -%>
+17:   </div>
+18:   <%= add_task_link(form) %>
+19:   <p><%= f.submit "Submit" %></p>
+20: <% end %>
+
+    app/helpers/cvcats_helper.rb:4:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:3:in `add_task_link'
+    app/views/cvcats/_form.html.erb:18:in `_render_template_395439940_19500460_208174'
+    app/views/cvcats/_form.html.erb:1:in `_render_template_395439940_19500460_208174'
+    app/views/cvcats/new.html.erb:3:in `_render_template__219151234_19508900_0'
+
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:33:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+
+
+Processing ApplicationController# (for 127.0.0.1 at 2009-06-12 20:33:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+
+ActionView::TemplateError (undefined local variable or method `form_builder' for #<ActionView::Base:0x259b3dc>) on line #18 of /Users/solomon/programming/lorrainelubner/app/views/cvcats/_form.html.erb:
+15:     </div>
+16:     <% end -%>
+17:   </div>
+18:   <%= add_task_link(form) %>
+19:   <p><%= f.submit "Submit" %></p>
+20: <% end %>
+
+    app/helpers/cvcats_helper.rb:4:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:3:in `add_task_link'
+    app/views/cvcats/_form.html.erb:18:in `_render_template_395439940_19565250_208174'
+    app/views/cvcats/_form.html.erb:1:in `_render_template_395439940_19565250_208174'
+    app/views/cvcats/new.html.erb:3:in `_render_template__219151234_19579230_0'
+
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:34:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+
+
+Processing ApplicationController# (for 127.0.0.1 at 2009-06-12 20:34:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+
+ActionView::TemplateError (undefined local variable or method `entry_form' for #<ActionView::Base:0x259e744>) on line #3 of /Users/solomon/programming/lorrainelubner/app/views/cvcats/_entries.html.erb:
+1: <div class="entry">
+2:   <p>
+3:     <%= entry_form.label :entry %>
+4:     <%= entry_form.text_field :entry %>
+5:   </p>
+6: </div>
+
+    app/views/cvcats/_entries.html.erb:3:in `_render_template__875447897_19509630_447878'
+    app/helpers/cvcats_helper.rb:5:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:4:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:3:in `add_task_link'
+    app/views/cvcats/_form.html.erb:18:in `_render_template_395439940_19557000_208174'
+    app/views/cvcats/_form.html.erb:1:in `_render_template_395439940_19557000_208174'
+    app/views/cvcats/new.html.erb:3:in `_render_template__219151234_19565810_0'
+
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:34:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 96ms (View: 14, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:34:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+
+
+Processing ApplicationController# (for 127.0.0.1 at 2009-06-12 20:34:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+
+ActionView::TemplateError (undefined local variable or method `entry_form' for #<ActionView::Base:0x26be8cc>) on line #3 of /Users/solomon/programming/lorrainelubner/app/views/cvcats/_entries.html.erb:
+1: <div class="entry">
+2:   <p>
+3:     <%= entry_form.label :entry %>
+4:     <%= entry_form.text_field :entry %>
+5:   </p>
+6: </div>
+
+    app/views/cvcats/_entries.html.erb:3:in `_render_template__875447897_20089670_447878'
+    app/helpers/cvcats_helper.rb:5:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:4:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:3:in `add_task_link'
+    app/views/cvcats/_form.html.erb:18:in `_render_template_395439940_20133240_208174'
+    app/views/cvcats/_form.html.erb:1:in `_render_template_395439940_20133240_208174'
+    app/views/cvcats/new.html.erb:3:in `_render_template__219151234_20156100_0'
+
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:35:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 39ms (View: 17, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:35:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+
+
+Processing ApplicationController# (for 127.0.0.1 at 2009-06-12 20:35:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.fields_for) on line #18 of /Users/solomon/programming/lorrainelubner/app/views/cvcats/_form.html.erb:
+15:     </div>
+16:     <% end -%>
+17:   </div>
+18:   <%= add_task_link(form) %>
+19:   <p><%= f.submit "Submit" %></p>
+20: <% end %>
+
+    app/helpers/cvcats_helper.rb:4:in `__instance_exec0'
+    app/helpers/cvcats_helper.rb:3:in `add_task_link'
+    app/views/cvcats/_form.html.erb:18:in `_render_template_395439940_19446300_208174'
+    app/views/cvcats/_form.html.erb:1:in `_render_template_395439940_19446300_208174'
+    app/views/cvcats/new.html.erb:3:in `_render_template__219151234_19454700_0'
+
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:35:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 39ms (View: 18, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:35:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 41ms (View: 17, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:35:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 36ms (View: 19, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#create (for 127.0.0.1 at 2009-06-12 20:35:48) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "controller"=>"cvcats", "cvcat"=>{"category"=>"foo", "cventries_attributes"=>{"0"=>{"entry"=>"bar"}}}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCvcat Create (0.6ms)[0m   [0;1mINSERT INTO "cvcats" ("category", "updated_at", "created_at") VALUES('foo', '2009-06-13 03:35:48.750700', '2009-06-13 03:35:48.750700')[0m
+  [4;35;1mCventry Create (0.2ms)[0m   [0mINSERT INTO "cventries" ("cvcat_id", "updated_at", "entry", "created_at") VALUES(2, '2009-06-13 03:35:48.752316', 'bar', '2009-06-13 03:35:48.752316')[0m
+Redirected to http://localhost:3000/cvcats
+Completed in 30ms (DB: 1) | 302 Found [http://localhost/cvcats]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:35:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.6ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCventry Load (0.3ms)[0m   [0;1mSELECT * FROM "cventries" WHERE ("cventries".cvcat_id = 2) [0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 95ms (View: 88, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#destroy (for 127.0.0.1 at 2009-06-12 20:35:51) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "id"=>"2", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCvcat Load (0.4ms)[0m   [0;1mSELECT * FROM "cvcats" WHERE ("cvcats"."id" = 2) [0m
+  [4;35;1mCventry Load (0.2ms)[0m   [0mSELECT * FROM "cventries" WHERE ("cventries".cvcat_id = 2) [0m
+  [4;36;1mCventry Destroy (0.3ms)[0m   [0;1mDELETE FROM "cventries" WHERE "id" = 3[0m
+  [4;35;1mCvcat Destroy (0.1ms)[0m   [0mDELETE FROM "cvcats" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/cvcats
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/cvcats/2]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:35:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.6ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:35:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#create (for 127.0.0.1 at 2009-06-12 20:35:59) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "controller"=>"cvcats", "cvcat"=>{"category"=>"foo", "cventries_attributes"=>{"0"=>{"entry"=>"boo"}}}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCvcat Create (0.4ms)[0m   [0;1mINSERT INTO "cvcats" ("category", "updated_at", "created_at") VALUES('foo', '2009-06-13 03:35:59.807509', '2009-06-13 03:35:59.807509')[0m
+  [4;35;1mCventry Create (0.1ms)[0m   [0mINSERT INTO "cventries" ("cvcat_id", "updated_at", "entry", "created_at") VALUES(3, '2009-06-13 03:35:59.808935', 'boo', '2009-06-13 03:35:59.808935')[0m
+Redirected to http://localhost:3000/cvcats
+Completed in 89ms (DB: 1) | 302 Found [http://localhost/cvcats]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:35:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.6ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCventry Load (0.3ms)[0m   [0;1mSELECT * FROM "cventries" WHERE ("cventries".cvcat_id = 3) [0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 36ms (View: 29, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#destroy (for 127.0.0.1 at 2009-06-12 20:36:03) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "id"=>"3", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCvcat Load (0.2ms)[0m   [0;1mSELECT * FROM "cvcats" WHERE ("cvcats"."id" = 3) [0m
+  [4;35;1mCventry Load (0.2ms)[0m   [0mSELECT * FROM "cventries" WHERE ("cventries".cvcat_id = 3) [0m
+  [4;36;1mCventry Destroy (0.3ms)[0m   [0;1mDELETE FROM "cventries" WHERE "id" = 4[0m
+  [4;35;1mCvcat Destroy (0.1ms)[0m   [0mDELETE FROM "cvcats" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/cvcats
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/cvcats/3]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:36:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.5ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#new (for 127.0.0.1 at 2009-06-12 20:36:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"cvcats"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/new.html.erb
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+Also note that the behaviour of Errors#[] has changed. Errors#[] now always returns an Array. An empty Array is returned when there are no errors on the specified attribute.. (called from on at /Users/solomon/programming/lorrainelubner/vendor/rails/activeresource/lib/../../activemodel/lib/active_model/deprecated_error_methods.rb:7)
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 37ms (View: 19, DB: 0) | 200 OK [http://localhost/cvcats/new]
+
+
+Processing CvcatsController#create (for 127.0.0.1 at 2009-06-12 20:36:13) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "controller"=>"cvcats", "cvcat"=>{"category"=>"foo", "cventries_attributes"=>{"0"=>{"entry"=>"bam"}}}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCvcat Create (0.8ms)[0m   [0;1mINSERT INTO "cvcats" ("category", "updated_at", "created_at") VALUES('foo', '2009-06-13 03:36:13.922828', '2009-06-13 03:36:13.922828')[0m
+  [4;35;1mCventry Create (0.1ms)[0m   [0mINSERT INTO "cventries" ("cvcat_id", "updated_at", "entry", "created_at") VALUES(4, '2009-06-13 03:36:13.924812', 'bam', '2009-06-13 03:36:13.924812')[0m
+Redirected to http://localhost:3000/cvcats
+Completed in 30ms (DB: 1) | 302 Found [http://localhost/cvcats]
+
+
+Processing CvcatsController#index (for 127.0.0.1 at 2009-06-12 20:36:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cvcats"}
+  [4;36;1mCvcat Load (0.6ms)[0m   [0;1mSELECT * FROM "cvcats" [0m
+Rendering /Users/solomon/programming/lorrainelubner/app/views/cvcats/index.html.erb
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCventry Load (0.3ms)[0m   [0;1mSELECT * FROM "cventries" WHERE ("cventries".cvcat_id = 4) [0m
+Rendering template within /Users/solomon/programming/lorrainelubner/app/views/layouts/application.html.erb
+Completed in 35ms (View: 29, DB: 1) | 200 OK [http://localhost/cvcats]
+
+
+Processing CvcatsController#destroy (for 127.0.0.1 at 2009-06-12 20:36:16) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"3fG/vA0i00AytRTqlF2xRp2D7j5Lr9mBg5F4wxIngfY=", "id"=>"4", "controller"=>"cvcats"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '68fa03301cfccb1b2e4d2439603d06c1e248f8f566b015166db8c908cbc94e12d884331372247838d14dc14278319793870c73f82268dd739c8a69f84e829af8') LIMIT 1[0m
+  [4;36;1mCvcat Load (0.2ms)[0m   [0;1mSELECT * FROM "cvcats" WHERE ("cvcats"."id" = 4) [0m
+  [4;35;1mCventry Load (0.3ms)[0m   [0mSELECT * FROM "cventries" WHERE ("cventries".cvcat_id = 4) [0m
+  [4;36;1mCventry Destroy (0.3ms)[0m   [0;1mDELETE FROM "cventries" WHERE "id" = 5[0m
+  [4;35;1mCvcat Destroy (0.1ms)[0m   [0mDELETE FROM "cvcats" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/cvcats
+Completed in 30ms (DB: 1) | 302 Found [http://localhost/cvcats/4]
+^CExiting
+solomon@yellowshark lorrainelubner % cit [K[K[K[Kgit add .
+gsolomon@yellowshark lorrainelubner % git commit 
+^C
+solomon@yellowshark lorrainelubner % Error detected while processing /usr/share/vim/vim72/plugin/rrhelper.vim:[J
+line    1:[J
+Interrupted[J
+Error detected while processing /usr/share/vim/vim72/plugin/spellfile.vim:[J
+line    1:[J
+Interrupted[J
+Error detected while processing /usr/share/vim/vim72/plugin/tarPlugin.vim:[J
+line    1:[J
+Interrupted[J
+Error detected while processing /usr/share/vim/vim72/plugin/tohtml.vim:[J
+line    1:[J
+Interrupted[J
+Error detected while processing /usr/share/vim/vim72/plugin/vimballPlugin.vim:[J
+line    1:[J
+Interrupted[J
+Error detected while processing /usr/share/vim/vim72/plugin/zipPlugin.vim:[J
+line    1:[J
+Interrupted[J
+Interrupt: Press ENTER or type command to continueg[24;1HVim: Error reading input, exiting...
+
+Vim: Finished.
+[24;1Hit [K[K[K[K
+solomon@yellowshark lorrainelubner % git commit -a -m "fixed f[Kcv fas[K[K[Kassociations. D= A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K Pa rtially working javascript entry form."

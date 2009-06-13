@@ -1,14 +1,5 @@
 <% title "New Cvcat" %>
 
-<% form_for @cvcat do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
-  </p>
-
-  
-  <p><%= f.submit "Submit" %></p>
-<% end %>
+ <%= render :partial => 'form' %>
 
 <p><%= link_to "Back to List", cvcats_path %></p>

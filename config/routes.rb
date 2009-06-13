@@ -1,10 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :cventries
   map.root :controller => 'info'
   map.resources :user_sessions
   map.resources :users
   map.resources :paintings
   map.resources :cvcats
+  map.resources :cventries
   map.resources :home
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"

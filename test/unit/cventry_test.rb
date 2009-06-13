@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CventriesTest < ActiveSupport::TestCase
+class CventryTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true
