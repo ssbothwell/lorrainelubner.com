@@ -1,5 +1,5 @@
 <% title "Painting" %>
-<center>
+<div id="painting">
 <%= image_tag @painting.photo.url(:medium) %>
 <p>
   <%=h @painting.title %>
@@ -15,4 +15,4 @@
   <% end %>
   <%= link_to "View All", paintings_path %>
 </p>
-</center>
+</div>
