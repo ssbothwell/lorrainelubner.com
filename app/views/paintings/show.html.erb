@@ -5,9 +5,8 @@
   <%=h @painting.title %>
 </p>
 <p>
-  <%=h @painting.description %>
+  <%=h @painting.description %> <%=h @painting.year %>
 </p>
-
 <p>
   <% if current_user %>
     <%= link_to "Edit", edit_painting_path(@painting), :class => "crud" %> |
