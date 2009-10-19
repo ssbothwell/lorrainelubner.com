@@ -9,11 +9,10 @@
 </div>
 <% end %>
 
-
+</div>
 <div class="span-16">
 	<%= will_paginate @paintings %>
 <% if current_user %>
   <%= link_to "New Painting", new_painting_path, :class => "crud" %>
 <% end %>
-</div>
 </div>

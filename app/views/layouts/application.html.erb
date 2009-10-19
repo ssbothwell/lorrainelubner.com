@@ -22,15 +22,6 @@
 			<li><div class="cv"><div class="button"><%= link_to "Curriculum Vitae", cvcats_path %></div></div></li>
 			<li><div class="gallery"><div class="button"><%= link_to "Paintings", paintings_path %></div></div></li>
 		</ul>
-	<div id="user_nav">
-    <% if current_user %>
-      <%= link_to "Edit Profile", edit_user_path(:current) %> |
-      <%= link_to "Logout", logout_path %>
-    <% else %>
-      <%= link_to "Register", new_user_path %> |
-      <%= link_to "Login", login_path %>
-    <% end %>
-  </div>
 	</div>
 	<div class="content span-17 last">
     <%= yield %>
