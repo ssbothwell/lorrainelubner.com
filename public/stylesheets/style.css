@@ -1,6 +1,5 @@
-#container {
+.container {
 	text-align: left;
-	width: 900px;
 	margin: 0 auto 0 auto;
 	height: 100%;
 	font-family: sans-serif;
@@ -11,9 +10,7 @@
 	width: 1000px;
 }
 
-#frame {
-	float: left;
-	width: 800px;
+.frame {
 	height: 600px;
 	background-color: #eeeeee;
 	border: 1px solid #000;
@@ -22,10 +19,7 @@
 	margin-top: 50px;
 }
 
-#navigation {
-	float: left;
-	width: 200px;
-	height: 200px;
+.navigation {
 	background-color: #eeeeee;
 	border: 1px solid #000;
 	border-width: 0px 0px 0px 0px;
@@ -33,7 +27,7 @@
 	overflow: auto;
 }
 
-#navigation li {
+.navigation li {
 	list-style: none;
 	font-size: 20px;
 }
@@ -47,15 +41,10 @@
 
 #user_nav {
   font-size: 12px;
-	float: right;
 }
 
-#content {
-	height: 600px;
-	width: 600px;
+.content {
 	margin-top: 10px;
-	margin-left: 200px;
-	overflow: auto;
 }
 
 #text {
@@ -88,9 +77,6 @@ a img {
 }
 
 .picture {
-  margin: 2px;
-  height: auto;
-  width: 140px;
   float: left;
   text-align: center;
 }

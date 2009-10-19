@@ -2,7 +2,7 @@ class PaintingsController < ApplicationController
   before_filter :require_admin, :except => [:index, :show] 
 
   def index
-    @paintings = Painting.all
+    @paintings = Painting.paginate :per_page => 16, :page => params[:page], :order => 'created_at DESC'
   end
   
   def show

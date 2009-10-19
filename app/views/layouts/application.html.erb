@@ -2,15 +2,18 @@
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <%= stylesheet_link_tag 'style' %>
   <%= javascript_include_tag :defaults %>
+  <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print">	
+  <!--[if lt IE 8]><link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <%= stylesheet_link_tag 'style' %>
 	<title>Lorraine Lubner</title>
 </head>
 <body>
 
-<div id="container">
-<div id="frame">
-	<div id="navigation">
+<div class="container">
+<div class="frame span-23">
+	<div class="navigation span-6">
 		<div id="title">
 		<h2><%= link_to "Lorraine Lubner", root_url %></h2>
 
@@ -19,7 +22,6 @@
 			<li><div class="cv"><div class="button"><%= link_to "Curriculum Vitae", cvcats_path %></div></div></li>
 			<li><div class="gallery"><div class="button"><%= link_to "Paintings", paintings_path %></div></div></li>
 		</ul>
-	</div>
 	<div id="user_nav">
     <% if current_user %>
       <%= link_to "Edit Profile", edit_user_path(:current) %> |
@@ -29,8 +31,8 @@
       <%= link_to "Login", login_path %>
     <% end %>
   </div>
-  
-	<div id="content">
+	</div>
+	<div class="content span-17 last">
     <%= yield %>
 	</div>
 </div>

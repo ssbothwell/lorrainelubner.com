@@ -1,5 +1,5 @@
 class Painting < ActiveRecord::Base
-  has_attached_file :photo, :styles => { :small => "125x125>", :medium => "450x450>" },
+  has_attached_file :photo, :styles => { :small => "150x100>", :medium => "450x450>" },
                     :url  => "/assets/products/:id/:style/:basename.:extension",
                     :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
 

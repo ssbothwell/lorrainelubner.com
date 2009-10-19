@@ -1,9 +1,6 @@
 <% title "Paintings" %>
-<% if current_user %>
-  <%= link_to "New Painting", new_painting_path, :class => "crud" %>
-<% end %>
 <% for painting in @paintings %>
-<div class="picture">
+<div class="picture span-4">
   <%= link_to image_tag(painting.photo.url(:small)), painting %><br />
   <%=h painting.title %><br />
   <%=h painting.description %>
@@ -14,3 +11,12 @@
   <% end %>
 </div>
 <% end %>
+
+
+<div class="span-16">
+<%= will_paginate @paintings %>
+<% if current_user %>
+  <%= link_to "New Painting", new_painting_path, :class => "crud" %>
+<% end %>
+</div>
+
