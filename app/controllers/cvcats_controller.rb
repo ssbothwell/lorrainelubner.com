@@ -1,5 +1,9 @@
 class CvcatsController < ApplicationController
-  before_filter :require_admin, :except => [:index, :show] 
+  access_control do
+    allow :admin
+    allow anonymous, :to => [:index, :show]
+  end
+  
   def index
     @cvcats = Cvcat.all
   end
