@@ -13,7 +13,10 @@
       <% end %>
       </ul>
   <% end %>
-  <% if current_user %>
-    <p><%= link_to "New Category", new_cvcat_path, :class => "crud" %></p>
-  <% end %>
+	<div class="span-16">
+		<%= will_paginate @cvcats %>
+	  <% if current_user %>
+	    <p><%= link_to "New Category", new_cvcat_path, :class => "crud" %></p>
+	  <% end %>
+	</div>
 </div>

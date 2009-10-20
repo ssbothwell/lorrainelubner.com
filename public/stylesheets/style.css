@@ -75,6 +75,7 @@ a img {
 .picture {
   float: left;
   text-align: center;
+	height: 140px;
 }
 
 #painting {

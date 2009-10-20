@@ -11,8 +11,6 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
 
   helper_method :current_user
-  helper_method :require_user
-  helper_method :require_admin
 
   private
 

@@ -5,7 +5,7 @@ class CvcatsController < ApplicationController
   end
   
   def index
-    @cvcats = Cvcat.all
+    @cvcats = Cvcat.search(params[:search], params[:page])
   end
   
   def show
