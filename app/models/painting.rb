@@ -8,16 +8,14 @@ class Painting < ActiveRecord::Base
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
   
   def self.search(page, year)
-    year = year.to_i
-    if year == nil
-      start_date = 1900
-      end_date = 3000
-    else
-      start_date = year
-      end_date = (year + 9)
+    conditions = {}
+    if year
+      start_date = year.to_i                                               
+      end_date = (start_date + 9)                                           
+      conditions.merge!({ :year => start_date..end_date })
     end
-    paginate  :per_page => 16, :page => page,
-              :conditions => { :year => start_date..end_date },
+    paginate  :per_page => 16, :page => page,                       
+              :conditions => conditions,     
               :order => 'created_at ASC'
   end
 
