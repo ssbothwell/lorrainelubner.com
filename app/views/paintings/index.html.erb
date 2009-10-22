@@ -11,9 +11,9 @@
 </div>
 
 <div class="span-16">
-	<%= will_paginate @paintings %>
+	<%= will_paginate @paintings, :class => "left" %>
 <% if current_user %>
-  <%= link_to "New Painting", new_painting_path, :class => "crud" %>
+	<%= link_to "New Painting", new_painting_path, :class => "crud, right" %>
 <% end %>
 <!--- <%= link_to '2000s', {:controller => :paintings, :action => :index, :year => 2000 } %> -->
 </div>

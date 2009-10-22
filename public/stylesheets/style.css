@@ -87,3 +87,9 @@ a img {
 .gallery {
 	margin-top: 2%;
 }
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
