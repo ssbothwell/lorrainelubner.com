@@ -15,4 +15,5 @@
 <% if current_user %>
   <%= link_to "New Painting", new_painting_path, :class => "crud" %>
 <% end %>
+<%= link_to '2000s', {:controller => :paintings, :action => :index, :year => 2000 } %>
 </div>
