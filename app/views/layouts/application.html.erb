@@ -10,23 +10,18 @@
 	<title>Lorraine Lubner</title>
 </head>
 <body>
-
 <div class="container">
 <div class="frame span-23">
 	<div class="navigation span-6">
-		<div id="title">
-		<h2><%= link_to "Lorraine Lubner", root_url %></h2>
-
-		</div>
 		<ul>
-			<li><div class="cv"><div class="button"><%= link_to "Curriculum Vitae", cvcats_path %></div></div></li>
-			<li><div class="gallery"><div class="button"><%= link_to "Paintings", paintings_path %></div></div></li>
+			<li><%= link_to "Lorraine Lubner", root_url, :class => "large" %></li>
+			<li><%= link_to "Curriculum Vitae", cvcats_path %></li>
+			<li><%= link_to "Paintings", paintings_path %></li>
 		</ul>
 	</div>
 	<div class="content span-17 last">
     <%= yield %>
 	</div>
 </div>
-
 </body>
 </html>

@@ -5,11 +5,6 @@
 	font-family: sans-serif;
 }
 
-#header {
-	float: left;
-	width: 1000px;
-}
-
 .frame {
 	height: 600px;
 	background-color: #eeeeee;
@@ -24,7 +19,6 @@
 	border: 1px solid #000;
 	border-width: 0px 0px 0px 0px;
 	margin-top: 380px;
-	overflow: auto;
 }
 
 .navigation li {
@@ -32,32 +26,16 @@
 	font-size: 20px;
 }
 
-#title {
-	float: left;
-	width: 180px;
-	background-color: #eeeeee;
-	padding-left: 20px;
-}
-
-#user_nav {
-  font-size: 12px;
-}
-
 .text {
-	float: left;
 	height: 600px;
 	padding-left: 40px;
 	overflow: scroll;
 }
-#image {
-	float: left;
+
+.coverimage {
 	margin-left: 130px;
 	margin-top: 100px;
 	text-align: right;
-}
-
-#images {
-	margin-top: 60px;
 }
 
 a, a:visited, a:hover {
@@ -65,31 +43,19 @@ a, a:visited, a:hover {
 	color: #000;
 }
 
-a img {
-	border-style: none;
-}
-
-.crud{
-	color: red;
-}
-
 .picture {
-  float: left;
   text-align: center;
 	height: 140px;
 }
 
-#painting {
-  width: auto;
-  margin: 40px auto 0px auto;
-  text-align: center;
-}
 .gallery {
 	margin-top: 2%;
 }
+
 .left {
 	float: left;
 }
+
 .right {
 	float: right;
 }
