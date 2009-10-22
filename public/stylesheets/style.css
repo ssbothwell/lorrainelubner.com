@@ -48,6 +48,12 @@ a, a:visited, a:hover {
 	height: 140px;
 }
 
+#painting {
+  width: auto;
+  margin: 40px auto 0px auto;
+  text-align: center;
+}
+
 .gallery {
 	margin-top: 2%;
 }
