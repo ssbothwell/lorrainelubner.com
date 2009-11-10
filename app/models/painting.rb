@@ -16,7 +16,7 @@ class Painting < ActiveRecord::Base
     end
     paginate  :per_page => 16, :page => page,                       
               :conditions => conditions,     
-              :order => 'created_at ASC'
+              :order => 'year ASC'
   end
 
 end

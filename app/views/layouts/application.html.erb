@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-<div class="frame span-23">
+	<div class="frame span-23">
 	<div class="navigation span-6">
 		<ul>
 			<li><%= link_to "Lorraine Lubner", root_url, :class => "large" %></li>
@@ -19,8 +19,9 @@
 			<li><%= link_to "Paintings", paintings_path %></li>
 		</ul>
 	</div>
-	<div class="content span-17 last">
+	<div class="span-17 last">
     <%= yield %>
+	</div>
 	</div>
 </div>
 </body>
