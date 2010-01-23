@@ -47,3 +47,7 @@ a, a:visited, a:hover {
 .right {
 	float: right;
 }
+
+.underline {
+	text-decoration:underline;
+}
